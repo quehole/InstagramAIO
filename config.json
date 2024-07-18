@@ -1,0 +1,13 @@
+{
+    "Config": {
+        "token": "BOT TOKEN",
+        "prefix": "!",
+        "color": 123456,
+        "channel_1": 123456789012345678,
+        "channel_2": 234567890123456789
+    },
+    "Roles": {
+        "role_name_1": 10,
+        "role_name_2": 20
+    }
+}
