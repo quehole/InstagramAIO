@@ -1,0 +1,1 @@
+This text file should contain Instagram session cookies, one per line.
