@@ -1,4 +1,4 @@
-# bot made by @quehole
+# Made by @quehole
 
 import json
 import random
@@ -12,11 +12,11 @@ from discord.ext import commands
 with open('config.json') as f:
     cfg = json.load(f)
 
-token     = 'YOUR BOT TOKEN'
-prefix    = 'YOUR BOT PREFIX'
-color     = 'YOUR DESIRED COLOUR"
-channel_1 = 'CHANNEL 1'
-channel_2 = 'CHANNEL 2'
+token     = cfg['Config']['token']
+prefix    = cfg['Config']['prefix']
+color     = cfg['Config']['color']
+channel_1 = cfg['Config']['channel_1']
+channel_2 = cfg['Config']['channel_2']
 
 bot = commands.Bot(command_prefix=prefix, help_command=None, intents=discord.Intents.all())
 
@@ -116,11 +116,5 @@ async def iglike(ctx, postID):
                 post_ID = x.get_post(postID)
                 for _ in range(threads):
                     threading.Thread(target=x.like, args=(post_ID,)).start()
-
-
-
-
-
-
 
 bot.run(token)
