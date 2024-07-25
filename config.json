@@ -1,13 +1,11 @@
 {
     "Config": {
-        "token": "BOT TOKEN",
+        "token": "YOUR_DISCORD_BOT_TOKEN",
         "prefix": "!",
-        "color": 123456,
-        "channel_1": 123456789012345678,
-        "channel_2": 234567890123456789
-    },
-    "Roles": {
-        "role_name_1": 10,
-        "role_name_2": 20
+        "color": "#3498db",
+        "bot_channel": CHANNEL_ID_1,
+        "mod_channel": CHANNEL_ID_2,
+        "default_role_id": ROLE_ID_1,
+        "premium_role_id": ROLE_ID_2
     }
 }
